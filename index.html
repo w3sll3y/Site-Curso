@@ -9,11 +9,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
+    <!-- NAVBAR -->
     <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="index.html">
@@ -35,7 +35,7 @@
                 </a>
 
                 <a class="navbar-item">
-                    Sobre nos
+                    Promoções
                 </a>
 
                 <div class="navbar-item has-dropdown is-hoverable">
@@ -45,13 +45,19 @@
 
                     <div class="navbar-dropdown">
                         <a class="navbar-item" href="tecnologia.html">
-                            Tecnologia &nbsp; <i class="fas fa-mobile"></i>
+                            Games &nbsp; <i class="fas fa-gamepad"></i>
                         </a>
                         <a class="navbar-item" href="food.html">
-                            Alimentacao &nbsp; <i class="fas fa-utensils"></i>
+                            Programação &nbsp;<i class="fas fa-laptop-code"></i>
                         </a>
                         <a class="navbar-item" href="saude.html">
-                            Saude &nbsp; <i class="fas fa-heartbeat"></i>
+                            Alimentação &nbsp; <i class="fas fa-utensils"></i>
+                        </a>
+                        <a class="navbar-item" href="saude.html">
+                            Investimentos &nbsp; <i class="fas fa-chart-area"></i>
+                        </a>
+                        <a class="navbar-item" href="saude.html">
+                            Saúde &nbsp; <i class="fas fa-heartbeat"></i>
                         </a>
                         <hr class="navbar-divider">
                         <a class="navbar-item" href="outros.html">
@@ -80,7 +86,7 @@
     <section class="section">
 
         <div id="cursos"></div>
-
+        <!-- SEÇÃO PROGRAMAÇÃO -->
         <h1 class="title">Programação</h1>
         <div class="columns">
             <div class="column">
@@ -93,15 +99,27 @@
                     </div>
                     <div class="card-content">
                         <div class="content">
-                            <h5>Programador JavaScript FullStack</h5>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                            <a href="#">#css</a> <a href="#">#responsive</a>
-                            <br>
-                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                            <h5>Programador JavaScript FullStack em 8 semanas</h5>
                         </div>
-                        <a href="https://go.hotmart.com/T24780304X" target="_blank"><button
-                                class="button is-fullwidth is-dark">Ver curso</button></a>
+                        <button class="button is-fullwidth is-dark" id="button">Ver curso</button>
+                        <div class="modal" id="page-modal">
+                            <div class="modal-background"></div>
+                            <div class="modal-content">
+                                <div class="section modal-wrap">
+                                    <article class="message">
+                                        <div class="message-header">
+                                            <p>JavaScript em 8 semanas</p>
+                                        </div>
+                                        <div class="message-body">
+                                            asdasd <br />
+                                            <a href="https://go.hotmart.com/T24780304X" target="_blank">
+                                                <button class="button is-fullwidth is-dark">Ver curso</button></a>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <button class="modal-close is-large" arial-label="close"></button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -109,43 +127,33 @@
                 <div class="card">
                     <div class="card-image">
                         <figure class="image is-4by3">
-                            <img src="https://www.ifankar.com/wp-content/uploads/2019/11/htmlcssbootstrap.jpg"
-                                width="150" alt="Placeholder image">
-                        </figure>
-                    </div>
-                    <div class="card-content">
-                        <div class="content">
-                            <h5>Curso de HTML5, CSS3 e Bootstrap 4</h5>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                            <a href="#">#css</a> <a href="#">#responsive</a>
-                            <br>
-                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                        </div>
-                        <a href="https://go.hotmart.com/A24780118V" target="_blank"><button
-                                class="button is-fullwidth is-dark">Ver curso</button></a>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="card">
-                    <div class="card-image">
-                        <figure class="image is-4by3">
-                            <img src="http://celke.com.br/img_hotmart/123904/curso-de-php-orientado-a-objetos3.jpg"
+                            <img src="https://escoladejavascript.com/wp-content/uploads/2019/09/banner-JS8-250x250.png"
                                 alt="Placeholder image">
                         </figure>
                     </div>
                     <div class="card-content">
                         <div class="content">
-                            <h5>PHP Orientado a Objetos</h5>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                            <a href="#">#css</a> <a href="#">#responsive</a>
-                            <br>
-                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                            <h5>Programador JavaScript FullStack em 8 semanas</h5>
                         </div>
-                        <a href="https://go.hotmart.com/L24779410A" target="_blank"><button
-                                class="button is-fullwidth is-dark">Ver curso</button></a>
+                        <button class="button is-fullwidth is-dark" id="button2">Ver curso</button>
+                        <div class="modal" id="page-modal2">
+                            <div class="modal-background"></div>
+                            <div class="modal-content">
+                                <div class="section modal-wrap">
+                                    <article class="message">
+                                        <div class="message-header">
+                                            <p>JavaScript em 8 semanas</p>
+                                        </div>
+                                        <div class="message-body">
+                                            123 <br />
+                                            <a href="https://go.hotmart.com/T24780304X" target="_blank">
+                                                <button class="button is-fullwidth is-dark">Ver curso</button></a>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <button class="modal-close is-large" arial-label="close" id="pclose2"></button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -153,46 +161,107 @@
                 <div class="card">
                     <div class="card-image">
                         <figure class="image is-4by3">
-                            <img src="http://celke.com.br/clms/assets/imagens/img_hotmart/84566/curso_php_developer_250x250_v2.jpg"
+                            <img src="https://escoladejavascript.com/wp-content/uploads/2019/09/banner-JS8-250x250.png"
                                 alt="Placeholder image">
                         </figure>
                     </div>
                     <div class="card-content">
                         <div class="content">
-                            <h5>Curso de PHP Developer</h5>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                            <a href="#">#css</a> <a href="#">#responsive</a>
-                            <br>
-                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                            <h5>Programador JavaScript FullStack em 8 semanas</h5>
                         </div>
-                        <a href="https://go.hotmart.com/L24779410A" target="_blank"><button
-                                class="button is-fullwidth is-dark">Ver curso</button></a>
+                        <button class="button is-fullwidth is-dark" id="button3">Ver curso</button>
+                        <div class="modal" id="page-modal3">
+                            <div class="modal-background"></div>
+                            <div class="modal-content">
+                                <div class="section modal-wrap">
+                                    <article class="message">
+                                        <div class="message-header">
+                                            <p>JavaScript em 8 semanas</p>
+                                        </div>
+                                        <div class="message-body">
+                                            ksjde <br />
+                                            <a href="https://go.hotmart.com/T24780304X" target="_blank">
+                                                <button class="button is-fullwidth is-dark">Ver curso</button></a>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <button class="modal-close is-large" arial-label="close" id="pclose3"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img src="https://escoladejavascript.com/wp-content/uploads/2019/09/banner-JS8-250x250.png"
+                                alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="content">
+                            <h5>Programador JavaScript FullStack em 8 semanas</h5>
+                        </div>
+                        <button class="button is-fullwidth is-dark" id="button4">Ver curso</button>
+                        <div class="modal" id="page-modal4">
+                            <div class="modal-background"></div>
+                            <div class="modal-content">
+                                <div class="section modal-wrap">
+                                    <article class="message">
+                                        <div class="message-header">
+                                            <p>JavaScript em 8 semanas</p>
+                                        </div>
+                                        <div class="message-body">
+                                            ksjde <br />
+                                            <a href="https://go.hotmart.com/T24780304X" target="_blank">
+                                                <button class="button is-fullwidth is-dark">Ver curso</button></a>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <button class="modal-close is-large" arial-label="close" id="pclose4"></button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
         <hr>
-
+        <!-- SEÇÃO GAMES -->
         <h1 class="title">Games</h1>
         <div class="columns">
             <div class="column">
                 <div class="card">
                     <div class="card-image">
                         <figure class="image is-4by3">
-                            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                            <img src="https://escoladejavascript.com/wp-content/uploads/2019/09/banner-JS8-250x250.png"
+                                alt="Placeholder image">
                         </figure>
                     </div>
                     <div class="card-content">
                         <div class="content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                            <a href="#">#css</a> <a href="#">#responsive</a>
-                            <br>
-                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                            <h5>Programador JavaScript FullStack em 8 semanas</h5>
                         </div>
-                        <button class="button is-fullwidth is-dark">Ver mais</button>
+                        <button class="button is-fullwidth is-dark" id="gbutton">Ver curso</button>
+                        <div class="modal" id="gpage-modal">
+                            <div class="modal-background"></div>
+                            <div class="modal-content">
+                                <div class="section modal-wrap">
+                                    <article class="message">
+                                        <div class="message-header">
+                                            <p>JavaScript em 8 semanas</p>
+                                        </div>
+                                        <div class="message-body">
+                                            asdasd <br />
+                                            <a href="https://go.hotmart.com/T24780304X" target="_blank">
+                                                <button class="button is-fullwidth is-dark">Ver curso</button></a>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <button class="modal-close is-large" arial-label="close" id="gclose"></button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -200,18 +269,33 @@
                 <div class="card">
                     <div class="card-image">
                         <figure class="image is-4by3">
-                            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                            <img src="https://escoladejavascript.com/wp-content/uploads/2019/09/banner-JS8-250x250.png"
+                                alt="Placeholder image">
                         </figure>
                     </div>
                     <div class="card-content">
                         <div class="content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                            <a href="#">#css</a> <a href="#">#responsive</a>
-                            <br>
-                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                            <h5>Programador JavaScript FullStack em 8 semanas</h5>
                         </div>
-                        <button class="button is-fullwidth is-dark">Ver mais</button>
+                        <button class="button is-fullwidth is-dark" id="gbutton2">Ver curso</button>
+                        <div class="modal" id="gpage-modal2">
+                            <div class="modal-background"></div>
+                            <div class="modal-content">
+                                <div class="section modal-wrap">
+                                    <article class="message">
+                                        <div class="message-header">
+                                            <p>JavaScript em 8 semanas</p>
+                                        </div>
+                                        <div class="message-body">
+                                            asdasd <br />
+                                            <a href="https://go.hotmart.com/T24780304X" target="_blank">
+                                                <button class="button is-fullwidth is-dark">Ver curso</button></a>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <button class="modal-close is-large" arial-label="close" id="gclose2"></button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -219,18 +303,33 @@
                 <div class="card">
                     <div class="card-image">
                         <figure class="image is-4by3">
-                            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                            <img src="https://escoladejavascript.com/wp-content/uploads/2019/09/banner-JS8-250x250.png"
+                                alt="Placeholder image">
                         </figure>
                     </div>
                     <div class="card-content">
                         <div class="content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                            <a href="#">#css</a> <a href="#">#responsive</a>
-                            <br>
-                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                            <h5>Programador JavaScript FullStack em 8 semanas</h5>
                         </div>
-                        <button class="button is-fullwidth is-dark">Ver mais</button>
+                        <button class="button is-fullwidth is-dark" id="gbutton3">Ver curso</button>
+                        <div class="modal" id="gpage-modal3">
+                            <div class="modal-background"></div>
+                            <div class="modal-content">
+                                <div class="section modal-wrap">
+                                    <article class="message">
+                                        <div class="message-header">
+                                            <p>JavaScript em 8 semanas</p>
+                                        </div>
+                                        <div class="message-body">
+                                            asdasd <br />
+                                            <a href="https://go.hotmart.com/T24780304X" target="_blank">
+                                                <button class="button is-fullwidth is-dark">Ver curso</button></a>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <button class="modal-close is-large" arial-label="close" id="gclose3"></button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -238,43 +337,73 @@
                 <div class="card">
                     <div class="card-image">
                         <figure class="image is-4by3">
-                            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                            <img src="https://escoladejavascript.com/wp-content/uploads/2019/09/banner-JS8-250x250.png"
+                                alt="Placeholder image">
                         </figure>
                     </div>
                     <div class="card-content">
                         <div class="content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                            <a href="#">#css</a> <a href="#">#responsive</a>
-                            <br>
-                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                            <h5>Programador JavaScript FullStack em 8 semanas</h5>
                         </div>
-                        <button class="button is-fullwidth is-dark">Ver mais</button>
+                        <button class="button is-fullwidth is-dark" id="gbutton4">Ver curso</button>
+                        <div class="modal" id="gpage-modal4">
+                            <div class="modal-background"></div>
+                            <div class="modal-content">
+                                <div class="section modal-wrap">
+                                    <article class="message">
+                                        <div class="message-header">
+                                            <p>JavaScript em 8 semanas</p>
+                                        </div>
+                                        <div class="message-body">
+                                            asdasd <br />
+                                            <a href="https://go.hotmart.com/T24780304X" target="_blank">
+                                                <button class="button is-fullwidth is-dark">Ver curso</button></a>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <button class="modal-close is-large" arial-label="close" id="gclose4"></button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
         <hr>
-
+        <!-- SEÇÃO INVESTIMENTOS -->
         <h1 class="title">Investimentos</h1>
         <div class="columns">
             <div class="column">
                 <div class="card">
                     <div class="card-image">
                         <figure class="image is-4by3">
-                            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                            <img src="https://escoladejavascript.com/wp-content/uploads/2019/09/banner-JS8-250x250.png"
+                                alt="Placeholder image">
                         </figure>
                     </div>
                     <div class="card-content">
                         <div class="content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                            <a href="#">#css</a> <a href="#">#responsive</a>
-                            <br>
-                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                            <h5>Programador JavaScript FullStack em 8 semanas</h5>
                         </div>
-                        <button class="button is-fullwidth is-dark">Ver mais</button>
+                        <button class="button is-fullwidth is-dark" id="ibutton">Ver curso</button>
+                        <div class="modal" id="ipage-modal">
+                            <div class="modal-background"></div>
+                            <div class="modal-content">
+                                <div class="section modal-wrap">
+                                    <article class="message">
+                                        <div class="message-header">
+                                            <p>JavaScript em 8 semanas</p>
+                                        </div>
+                                        <div class="message-body">
+                                            asdasd <br />
+                                            <a href="https://go.hotmart.com/T24780304X" target="_blank">
+                                                <button class="button is-fullwidth is-dark">Ver curso</button></a>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <button class="modal-close is-large" arial-label="close" id="iclose"></button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -282,18 +411,33 @@
                 <div class="card">
                     <div class="card-image">
                         <figure class="image is-4by3">
-                            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                            <img src="https://escoladejavascript.com/wp-content/uploads/2019/09/banner-JS8-250x250.png"
+                                alt="Placeholder image">
                         </figure>
                     </div>
                     <div class="card-content">
                         <div class="content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                            <a href="#">#css</a> <a href="#">#responsive</a>
-                            <br>
-                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                            <h5>Programador JavaScript FullStack em 8 semanas</h5>
                         </div>
-                        <button class="button is-fullwidth is-dark">Ver mais</button>
+                        <button class="button is-fullwidth is-dark" id="ibutton2">Ver curso</button>
+                        <div class="modal" id="ipage-modal2">
+                            <div class="modal-background"></div>
+                            <div class="modal-content">
+                                <div class="section modal-wrap">
+                                    <article class="message">
+                                        <div class="message-header">
+                                            <p>JavaScript em 8 semanas</p>
+                                        </div>
+                                        <div class="message-body">
+                                            asdasd <br />
+                                            <a href="https://go.hotmart.com/T24780304X" target="_blank">
+                                                <button class="button is-fullwidth is-dark">Ver curso</button></a>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <button class="modal-close is-large" arial-label="close" id="iclose2"></button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -301,18 +445,33 @@
                 <div class="card">
                     <div class="card-image">
                         <figure class="image is-4by3">
-                            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                            <img src="https://escoladejavascript.com/wp-content/uploads/2019/09/banner-JS8-250x250.png"
+                                alt="Placeholder image">
                         </figure>
                     </div>
                     <div class="card-content">
                         <div class="content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                            <a href="#">#css</a> <a href="#">#responsive</a>
-                            <br>
-                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                            <h5>Programador JavaScript FullStack em 8 semanas</h5>
                         </div>
-                        <button class="button is-fullwidth is-dark">Ver mais</button>
+                        <button class="button is-fullwidth is-dark" id="ibutton3">Ver curso</button>
+                        <div class="modal" id="ipage-modal3">
+                            <div class="modal-background"></div>
+                            <div class="modal-content">
+                                <div class="section modal-wrap">
+                                    <article class="message">
+                                        <div class="message-header">
+                                            <p>JavaScript em 8 semanas</p>
+                                        </div>
+                                        <div class="message-body">
+                                            asdasd <br />
+                                            <a href="https://go.hotmart.com/T24780304X" target="_blank">
+                                                <button class="button is-fullwidth is-dark">Ver curso</button></a>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <button class="modal-close is-large" arial-label="close" id="iclose3"></button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -320,43 +479,73 @@
                 <div class="card">
                     <div class="card-image">
                         <figure class="image is-4by3">
-                            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                            <img src="https://escoladejavascript.com/wp-content/uploads/2019/09/banner-JS8-250x250.png"
+                                alt="Placeholder image">
                         </figure>
                     </div>
                     <div class="card-content">
                         <div class="content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                            <a href="#">#css</a> <a href="#">#responsive</a>
-                            <br>
-                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                            <h5>Programador JavaScript FullStack em 8 semanas</h5>
                         </div>
-                        <button class="button is-fullwidth is-dark">Ver mais</button>
+                        <button class="button is-fullwidth is-dark" id="ibutton4">Ver curso</button>
+                        <div class="modal" id="ipage-modal4">
+                            <div class="modal-background"></div>
+                            <div class="modal-content">
+                                <div class="section modal-wrap">
+                                    <article class="message">
+                                        <div class="message-header">
+                                            <p>JavaScript em 8 semanas</p>
+                                        </div>
+                                        <div class="message-body">
+                                            asdasd <br />
+                                            <a href="https://go.hotmart.com/T24780304X" target="_blank">
+                                                <button class="button is-fullwidth is-dark">Ver curso</button></a>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <button class="modal-close is-large" arial-label="close" id="iclose4"></button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
         <hr>
-
+        <!-- SEÇÃO ALIMENTAÇÃO -->
         <h1 class="title">Alimentação</h1>
         <div class="columns">
             <div class="column">
                 <div class="card">
                     <div class="card-image">
                         <figure class="image is-4by3">
-                            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                            <img src="https://escoladejavascript.com/wp-content/uploads/2019/09/banner-JS8-250x250.png"
+                                alt="Placeholder image">
                         </figure>
                     </div>
                     <div class="card-content">
                         <div class="content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                            <a href="#">#css</a> <a href="#">#responsive</a>
-                            <br>
-                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                            <h5>Programador JavaScript FullStack em 8 semanas</h5>
                         </div>
-                        <button class="button is-fullwidth is-dark">Ver mais</button>
+                        <button class="button is-fullwidth is-dark" id="abutton">Ver curso</button>
+                        <div class="modal" id="apage-modal">
+                            <div class="modal-background"></div>
+                            <div class="modal-content">
+                                <div class="section modal-wrap">
+                                    <article class="message">
+                                        <div class="message-header">
+                                            <p>JavaScript em 8 semanas</p>
+                                        </div>
+                                        <div class="message-body">
+                                            asdasd <br />
+                                            <a href="https://go.hotmart.com/T24780304X" target="_blank">
+                                                <button class="button is-fullwidth is-dark">Ver curso</button></a>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <button class="modal-close is-large" arial-label="close" id="aclose"></button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -364,18 +553,33 @@
                 <div class="card">
                     <div class="card-image">
                         <figure class="image is-4by3">
-                            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                            <img src="https://escoladejavascript.com/wp-content/uploads/2019/09/banner-JS8-250x250.png"
+                                alt="Placeholder image">
                         </figure>
                     </div>
                     <div class="card-content">
                         <div class="content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                            <a href="#">#css</a> <a href="#">#responsive</a>
-                            <br>
-                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                            <h5>Programador JavaScript FullStack em 8 semanas</h5>
                         </div>
-                        <button class="button is-fullwidth is-dark">Ver mais</button>
+                        <button class="button is-fullwidth is-dark" id="abutton2">Ver curso</button>
+                        <div class="modal" id="apage-modal2">
+                            <div class="modal-background"></div>
+                            <div class="modal-content">
+                                <div class="section modal-wrap">
+                                    <article class="message">
+                                        <div class="message-header">
+                                            <p>JavaScript em 8 semanas</p>
+                                        </div>
+                                        <div class="message-body">
+                                            asdasd <br />
+                                            <a href="https://go.hotmart.com/T24780304X" target="_blank">
+                                                <button class="button is-fullwidth is-dark">Ver curso</button></a>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <button class="modal-close is-large" arial-label="close" id="aclose2"></button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -383,18 +587,33 @@
                 <div class="card">
                     <div class="card-image">
                         <figure class="image is-4by3">
-                            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                            <img src="https://escoladejavascript.com/wp-content/uploads/2019/09/banner-JS8-250x250.png"
+                                alt="Placeholder image">
                         </figure>
                     </div>
                     <div class="card-content">
                         <div class="content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                            <a href="#">#css</a> <a href="#">#responsive</a>
-                            <br>
-                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                            <h5>Programador JavaScript FullStack em 8 semanas</h5>
                         </div>
-                        <button class="button is-fullwidth is-dark">Ver mais</button>
+                        <button class="button is-fullwidth is-dark" id="abutton3">Ver curso</button>
+                        <div class="modal" id="apage-modal3">
+                            <div class="modal-background"></div>
+                            <div class="modal-content">
+                                <div class="section modal-wrap">
+                                    <article class="message">
+                                        <div class="message-header">
+                                            <p>JavaScript em 8 semanas</p>
+                                        </div>
+                                        <div class="message-body">
+                                            asdasd <br />
+                                            <a href="https://go.hotmart.com/T24780304X" target="_blank">
+                                                <button class="button is-fullwidth is-dark">Ver curso</button></a>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <button class="modal-close is-large" arial-label="close" id="aclose3"></button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -402,43 +621,73 @@
                 <div class="card">
                     <div class="card-image">
                         <figure class="image is-4by3">
-                            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                            <img src="https://escoladejavascript.com/wp-content/uploads/2019/09/banner-JS8-250x250.png"
+                                alt="Placeholder image">
                         </figure>
                     </div>
                     <div class="card-content">
                         <div class="content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                            <a href="#">#css</a> <a href="#">#responsive</a>
-                            <br>
-                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                            <h5>Programador JavaScript FullStack em 8 semanas</h5>
                         </div>
-                        <button class="button is-fullwidth is-dark">Ver mais</button>
+                        <button class="button is-fullwidth is-dark" id="abutton4">Ver curso</button>
+                        <div class="modal" id="apage-modal4">
+                            <div class="modal-background"></div>
+                            <div class="modal-content">
+                                <div class="section modal-wrap">
+                                    <article class="message">
+                                        <div class="message-header">
+                                            <p>JavaScript em 8 semanas</p>
+                                        </div>
+                                        <div class="message-body">
+                                            asdasd <br />
+                                            <a href="https://go.hotmart.com/T24780304X" target="_blank">
+                                                <button class="button is-fullwidth is-dark">Ver curso</button></a>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <button class="modal-close is-large" arial-label="close" id="aclose4"></button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
         <hr>
-
+        <!-- SEÇÃO SAÚDE -->
         <h1 class="title">Saúde</h1>
         <div class="columns">
             <div class="column">
                 <div class="card">
                     <div class="card-image">
                         <figure class="image is-4by3">
-                            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                            <img src="https://escoladejavascript.com/wp-content/uploads/2019/09/banner-JS8-250x250.png"
+                                alt="Placeholder image">
                         </figure>
                     </div>
                     <div class="card-content">
                         <div class="content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                            <a href="#">#css</a> <a href="#">#responsive</a>
-                            <br>
-                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                            <h5>Programador JavaScript FullStack em 8 semanas</h5>
                         </div>
-                        <button class="button is-fullwidth is-dark">Ver mais</button>
+                        <button class="button is-fullwidth is-dark" id="sbutton">Ver curso</button>
+                        <div class="modal" id="spage-modal">
+                            <div class="modal-background"></div>
+                            <div class="modal-content">
+                                <div class="section modal-wrap">
+                                    <article class="message">
+                                        <div class="message-header">
+                                            <p>JavaScript em 8 semanas</p>
+                                        </div>
+                                        <div class="message-body">
+                                            asdasd <br />
+                                            <a href="https://go.hotmart.com/T24780304X" target="_blank">
+                                                <button class="button is-fullwidth is-dark">Ver curso</button></a>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <button class="modal-close is-large" arial-label="close" id="sclose"></button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -446,18 +695,33 @@
                 <div class="card">
                     <div class="card-image">
                         <figure class="image is-4by3">
-                            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                            <img src="https://escoladejavascript.com/wp-content/uploads/2019/09/banner-JS8-250x250.png"
+                                alt="Placeholder image">
                         </figure>
                     </div>
                     <div class="card-content">
                         <div class="content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                            <a href="#">#css</a> <a href="#">#responsive</a>
-                            <br>
-                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                            <h5>Programador JavaScript FullStack em 8 semanas</h5>
                         </div>
-                        <button class="button is-fullwidth is-dark">Ver mais</button>
+                        <button class="button is-fullwidth is-dark" id="sbutton2">Ver curso</button>
+                        <div class="modal" id="spage-modal2">
+                            <div class="modal-background"></div>
+                            <div class="modal-content">
+                                <div class="section modal-wrap">
+                                    <article class="message">
+                                        <div class="message-header">
+                                            <p>JavaScript em 8 semanas</p>
+                                        </div>
+                                        <div class="message-body">
+                                            asdasd <br />
+                                            <a href="https://go.hotmart.com/T24780304X" target="_blank">
+                                                <button class="button is-fullwidth is-dark">Ver curso</button></a>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <button class="modal-close is-large" arial-label="close" id="sclose2"></button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -465,18 +729,33 @@
                 <div class="card">
                     <div class="card-image">
                         <figure class="image is-4by3">
-                            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                            <img src="https://escoladejavascript.com/wp-content/uploads/2019/09/banner-JS8-250x250.png"
+                                alt="Placeholder image">
                         </figure>
                     </div>
                     <div class="card-content">
                         <div class="content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                            <a href="#">#css</a> <a href="#">#responsive</a>
-                            <br>
-                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                            <h5>Programador JavaScript FullStack em 8 semanas</h5>
                         </div>
-                        <button class="button is-fullwidth is-dark">Ver mais</button>
+                        <button class="button is-fullwidth is-dark" id="sbutton3">Ver curso</button>
+                        <div class="modal" id="spage-modal3">
+                            <div class="modal-background"></div>
+                            <div class="modal-content">
+                                <div class="section modal-wrap">
+                                    <article class="message">
+                                        <div class="message-header">
+                                            <p>JavaScript em 8 semanas</p>
+                                        </div>
+                                        <div class="message-body">
+                                            asdasd <br />
+                                            <a href="https://go.hotmart.com/T24780304X" target="_blank">
+                                                <button class="button is-fullwidth is-dark">Ver curso</button></a>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <button class="modal-close is-large" arial-label="close" id="sclose3"></button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -484,18 +763,33 @@
                 <div class="card">
                     <div class="card-image">
                         <figure class="image is-4by3">
-                            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                            <img src="https://escoladejavascript.com/wp-content/uploads/2019/09/banner-JS8-250x250.png"
+                                alt="Placeholder image">
                         </figure>
                     </div>
                     <div class="card-content">
                         <div class="content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                            <a href="#">#css</a> <a href="#">#responsive</a>
-                            <br>
-                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                            <h5>Programador JavaScript FullStack em 8 semanas</h5>
                         </div>
-                        <button class="button is-fullwidth is-dark">Ver mais</button>
+                        <button class="button is-fullwidth is-dark" id="sbutton4">Ver curso</button>
+                        <div class="modal" id="spage-modal4">
+                            <div class="modal-background"></div>
+                            <div class="modal-content">
+                                <div class="section modal-wrap">
+                                    <article class="message">
+                                        <div class="message-header">
+                                            <p>JavaScript em 8 semanas</p>
+                                        </div>
+                                        <div class="message-body">
+                                            asdasd <br />
+                                            <a href="https://go.hotmart.com/T24780304X" target="_blank">
+                                                <button class="button is-fullwidth is-dark">Ver curso</button></a>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <button class="modal-close is-large" arial-label="close" id="sclose4"></button>
+                        </div>
                     </div>
                 </div>
             </div>
