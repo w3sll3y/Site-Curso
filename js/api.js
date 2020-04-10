@@ -23,7 +23,7 @@ async function mostrarCursos(res) {
                         <div class="content">
                             <h5>${res[i].nome}</h5>
                         </div>
-                        <button class="button is-fullwidth is-dark" id="button">Ver mais</button>
+                        <a href="${res[i].urlCurso}" target="blank"><button class="button is-fullwidth is-dark" id="button">Ver curso</button></a>
                     </div>
                 </div>
             </div>
