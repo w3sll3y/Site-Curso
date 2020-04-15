@@ -1,0 +1,339 @@
+<DOCTYPE html!>
+    <html lang=pt>
+
+    <head>
+        <meta charset=UTF-8>
+        <title>Aki cursos</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    </head>
+
+    <body>
+        <!-- NAVBAR -->
+        <nav class="navbar is-info" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <img src="img/logo.png" width="120" height="40">
+                </a>
+
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="index.html">
+                        Home
+                    </a>
+
+                    <a class="navbar-item" href="promocoes.html">
+                        Promoções
+                    </a>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                            Categorias
+                        </a>
+
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item" href="games.html">
+                                Games &nbsp; <i class="fas fa-gamepad"></i>
+                            </a>
+                            <a class="navbar-item" href="programacao.html">
+                                Programação &nbsp;<i class="fas fa-laptop-code"></i>
+                            </a>
+                            <a class="navbar-item" href="alimentacao.html">
+                                Alimentação &nbsp; <i class="fas fa-utensils"></i>
+                            </a>
+                            <a class="navbar-item" href="investimentos.html">
+                                Investimentos &nbsp; <i class="fas fa-chart-area"></i>
+                            </a>
+                            <a class="navbar-item" href="saude.html">
+                                Saúde &nbsp; <i class="fas fa-heartbeat"></i>
+                            </a>
+                            <hr class="navbar-divider">
+                            <a class="navbar-item" href="outros.html">
+                                Outros &nbsp; <i class="fas fa-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- BARRA DE PESQUISA -->
+        <section class="section is-primary">
+            <div class="field is-grouped">
+                <p class="control is-expanded">
+                    <input class="input" type="text" placeholder="O que você procura?">
+                </p>
+                <p class="control">
+                    <a class="button is-info">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </p>
+            </div>
+        </section>
+
+        <section class="section">
+
+            <!-- SEÇÃO INVESTIMENTOS -->
+            <h1 class="title">Investimentos</h1>
+            <div class="columns">
+                <div class="column">
+                    <div class="card">
+                        <div class="card-content">
+                            <figure class="image is-4by3">
+                                <img src="https://escoladejavascript.com/wp-content/uploads/2019/09/banner-JS8-250x250.png"
+                                    alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="content">
+                                <h5>Programador JavaScript FullStack em 8 semanas</h5>
+                            </div>
+                            <button class="button is-fullwidth is-dark" id="button">Ver mais</button>
+                            <div class="modal" id="page-modal">
+                                <div class="modal-background"></div>
+                                <div class="modal-content">
+                                    <div class="section modal-wrap">
+                                        <article class="message">
+                                            <div class="message-header">
+                                                <p>JavaScript em 8 semanas</p>
+                                            </div>
+                                            <div class="message-body">
+                                                asdasd <br />
+                                                <a href="https://go.hotmart.com/T24780304X" target="_blank">
+                                                    <button class="button is-fullwidth is-dark">Ver curso</button></a>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                                <button class="modal-close is-large" arial-label="close"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="card-content">
+                            <figure class="image is-4by3">
+                                <img src="https://escoladejavascript.com/wp-content/uploads/2019/09/banner-JS8-250x250.png"
+                                    alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="content">
+                                <h5>Programador JavaScript FullStack em 8 semanas</h5>
+                            </div>
+                            <button class="button is-fullwidth is-dark" id="button2">Ver mais</button>
+                            <div class="modal" id="page-modal2">
+                                <div class="modal-background"></div>
+                                <div class="modal-content">
+                                    <div class="section modal-wrap">
+                                        <article class="message">
+                                            <div class="message-header">
+                                                <p>JavaScript em 8 semanas</p>
+                                            </div>
+                                            <div class="message-body">
+                                                123 <br />
+                                                <a href="https://go.hotmart.com/T24780304X" target="_blank">
+                                                    <button class="button is-fullwidth is-dark">Ver curso</button></a>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                                <button class="modal-close is-large" arial-label="close" id="pclose2"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="card-content">
+                            <figure class="image is-4by3">
+                                <img src="https://escoladejavascript.com/wp-content/uploads/2019/09/banner-JS8-250x250.png"
+                                    alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="content">
+                                <h5>Programador JavaScript FullStack em 8 semanas</h5>
+                            </div>
+                            <button class="button is-fullwidth is-dark" id="button3">Ver mais</button>
+                            <div class="modal" id="page-modal3">
+                                <div class="modal-background"></div>
+                                <div class="modal-content">
+                                    <div class="section modal-wrap">
+                                        <article class="message">
+                                            <div class="message-header">
+                                                <p>JavaScript em 8 semanas</p>
+                                            </div>
+                                            <div class="message-body">
+                                                ksjde <br />
+                                                <a href="https://go.hotmart.com/T24780304X" target="_blank">
+                                                    <button class="button is-fullwidth is-dark">Ver curso</button></a>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                                <button class="modal-close is-large" arial-label="close" id="pclose3"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="card-content">
+                            <figure class="image is-4by3">
+                                <img src="https://escoladejavascript.com/wp-content/uploads/2019/09/banner-JS8-250x250.png"
+                                    alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="content">
+                                <h5>Programador JavaScript FullStack em 8 semanas</h5>
+                            </div>
+                            <button class="button is-fullwidth is-dark" id="button4">Ver mais</button>
+                            <div class="modal" id="page-modal4">
+                                <div class="modal-background"></div>
+                                <div class="modal-content">
+                                    <div class="section modal-wrap">
+                                        <article class="message">
+                                            <div class="message-header">
+                                                <p>JavaScript em 8 semanas</p>
+                                            </div>
+                                            <div class="message-body">
+                                                ksjde <br />
+                                                <a href="https://go.hotmart.com/T24780304X" target="_blank">
+                                                    <button class="button is-fullwidth is-dark">Ver curso</button></a>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                                <button class="modal-close is-large" arial-label="close" id="pclose4"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- RODAPÉ -->
+        <footer style="background-color:#33E5FF;" class="footer">
+            <div class="content has-text-centered">
+                <img src="img/logo.png" width="300" height="40">
+            </div>
+            <div class="columns">
+                <div class="column is-4">
+                    <p class="subtitle  is-4 has-text-rigth">Sobre nós:</p>
+                    <h4>Feito por:</h4>
+                    <i class="fab fa-linkedin"></i> <a target="_blank"
+                        href="https://www.linkedin.com/in/wesley-almeida-fernandes/" style="color:inherit;">Wesley
+                        Fernandes</a> </br>
+                    <i class="fab fa-linkedin"></i> <a target="_blank" href="https://www.linkedin.com/in/rafabrunof/"
+                        style="color:inherit;">Rafael Bruno</a>
+                </div>
+                <div class="column is-4">
+                    <p class="subtitle is-4 has-text-rigth">Redes Sociais</p>
+                    <i class="fab fa-linkedin"></i> Linkedin </br>
+                    <i class="fab fa-facebook-square"></i> Facebook </br>
+                    <i class="fab fa-instagram"></i> Instagram </br>
+                    <i class="fab fa-twitter"></i> Twitter
+                </div>
+                <div class="column is-4">
+                    <p class="subtitle is-4 has-text-rigth">Receba novidades:</p>
+                    <div class="control has-icons-left has-icons-right">
+                        <input class="input is-medium" type="email" placeholder="Email">
+                        <span class="icon is-left">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                    </div> </br>
+                    <label class="checkbox">
+                        <input type="checkbox"> Programação
+                    </label> </br>
+                    <label class="checkbox">
+                        <input type="checkbox"> Games
+                    </label> </br>
+                    <label class="checkbox">
+                        <input type="checkbox"> Investimentos
+                    </label> </br>
+                    <label class="checkbox">
+                        <input type="checkbox"> Alimentação
+                    </label> </br>
+                    <label class="checkbox">
+                        <input type="checkbox"> Saúde
+                    </label>
+                    <div class="columns">
+                        <div class="column is-9"></div>
+                        <div class="column">
+                            <button class="button is-dark">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            (function () {
+                var burger = document.querySelector('.burger');
+                var nav = document.querySelector('#' + burger.dataset.target);
+
+                burger.addEventListener('click', function () {
+                    burger.classList.toggle('is-active');
+                    nav.classList.toggle('is-active');
+                });
+            })();
+
+
+            // ----------------- Modal ------------------
+
+            var pbutton = document.getElementById('button');
+            var pbutton2 = document.getElementById('button2');
+            var pbutton3 = document.getElementById('button3');
+            var pbutton4 = document.getElementById('button4');
+
+            var pmodal = document.getElementById('page-modal');
+            var pmodal2 = document.getElementById('page-modal2');
+            var pmodal3 = document.getElementById('page-modal3');
+            var pmodal4 = document.getElementById('page-modal4');
+
+            var pclose = document.getElementsByClassName('modal-close')[0];
+
+            pbutton.onclick = function () {
+                pmodal.style.display = 'block';
+            }
+            pclose.onclick = function () {
+                pmodal.style.display = 'none';
+            }
+
+            pbutton2.onclick = function () {
+                pmodal2.style.display = 'block';
+            }
+            pclose2.onclick = function () {
+                pmodal2.style.display = 'none';
+            }
+
+            pbutton3.onclick = function () {
+                pmodal3.style.display = 'block';
+            }
+            pclose3.onclick = function () {
+                pmodal3.style.display = 'none';
+            }
+
+            pbutton4.onclick = function () {
+                pmodal4.style.display = 'block';
+            }
+            pclose4.onclick = function () {
+                pmodal4.style.display = 'none'
+            }
+        </script>
+
+    </body>
+
+    </html>
