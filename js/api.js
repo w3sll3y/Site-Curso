@@ -21,6 +21,8 @@ function main() {
 //  MOSTRAR CURSOS
 async function mostrarCursos(res) {
 
+    $('#loader').hide();
+
     //  TEMPLATES
     let templateProgramacao = "";
     let templateMarketing = "";
@@ -134,6 +136,7 @@ async function mostrarCursos(res) {
 async function requestApi() {
     let response = await fetch(url);
     response = await response.json();
+    
     return response;
 }
 
