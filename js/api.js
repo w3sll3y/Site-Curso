@@ -47,19 +47,21 @@ async function mostrarCursos(res) {
         templateProgramacao = `
                 <div class="column">
                     <div class="card">
-                        <div class="card-content">
+                        <div class="card-image">
                             <figure class="image is-4by3">
-                                <img src="${listaCursosProgramacao[i].urlImagem}">
-                            </figure>
+                                <img src="${listaCursosProgramacao[i].urlImagem}" >
+                            </figure>                                                       
                         </div>
                         <div class="card-content">
                             <div class="content">
                                 <h5>${listaCursosProgramacao[i].nome}</h5>
-                            </div>
-                            <a href="${listaCursosProgramacao[i].urlCurso}" target="blank"><button class="button is-fullwidth is-dark" id="button">Ver curso</button></a>
+                            </div> 
                         </div>
                     </div>
-                </div>
+                    <a href="${listaCursosProgramacao[i].urlCurso}" target="blank">
+                        <button class="button is-fullwidth is-dark" id="button">Ver mais</button>
+                    </a>
+                </div>                
             `;
         cursosProgramacao.innerHTML += templateProgramacao;
     }
@@ -67,43 +69,47 @@ async function mostrarCursos(res) {
     // MOSTRANDO A LISTA DE CURSOS
     for (var i in listaCursosMarketing) {
         templateMarketing = `
-                <div class="column">
-                    <div class="card">
-                        <div class="card-content">
-                            <figure class="image is-4by3">
-                                <img src="${listaCursosMarketing[i].urlImagem}">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="content">
-                                <h5>${listaCursosMarketing[i].nome}</h5>
-                            </div>
-                            <a href="${listaCursosMarketing[i].urlCurso}" target="blank"><button class="button is-fullwidth is-dark" id="button">Ver curso</button></a>
-                        </div>
+            <div class="column">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img src="${listaCursosMarketing[i].urlImagem}" >
+                        </figure>                                                       
+                    </div>
+                    <div class="card-content">
+                        <div class="content">
+                            <h5>${listaCursosMarketing[i].nome}</h5>
+                        </div> 
                     </div>
                 </div>
-            `;
+                <a href="${listaCursosMarketing[i].urlCurso}" target="blank">
+                    <button class="button is-fullwidth is-dark" id="button">Ver mais</button>
+                </a>
+            </div>    
+        `;
         cursosMarketing.innerHTML += templateMarketing;
     }
 
     // MOSTRANDO A LISTA DE CURSOS
     for (var i in listaCursosInvestimentos) {
         templateInvestimentos = `
-                <div class="column">
-                    <div class="card">
-                        <div class="card-content">
-                            <figure class="image is-4by3">
-                                <img src="${listaCursosInvestimentos[i].urlImagem}">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="content">
-                                <h5>${listaCursosInvestimentos[i].nome}</h5>
-                            </div>
-                            <a href="${listaCursosInvestimentos[i].urlCurso}" target="blank"><button class="button is-fullwidth is-dark" id="button">Ver curso</button></a>
-                        </div>
+            <div class="column">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img src="${listaCursosInvestimentos[i].urlImagem}" >
+                        </figure>                                                       
+                    </div>
+                    <div class="card-content">
+                        <div class="content">
+                            <h5>${listaCursosInvestimentos[i].nome}</h5>
+                        </div> 
                     </div>
                 </div>
+                <a href="${listaCursosInvestimentos[i].urlCurso}" target="blank">
+                    <button class="button is-fullwidth is-dark" id="button">Ver mais</button>
+                </a>
+            </div> 
             `;
         cursosInvestimentos.innerHTML += templateInvestimentos;
     }
@@ -113,19 +119,21 @@ async function mostrarCursos(res) {
         templateGames = `
                 <div class="column">
                     <div class="card">
-                        <div class="card-content">
+                        <div class="card-image">
                             <figure class="image is-4by3">
-                                <img src="${listaCursosGames[i].urlImagem}">
-                            </figure>
+                                <img src="${listaCursosGames[i].urlImagem}" >
+                            </figure>                                                       
                         </div>
                         <div class="card-content">
                             <div class="content">
                                 <h5>${listaCursosGames[i].nome}</h5>
-                            </div>
-                            <a href="${listaCursosGames[i].urlCurso}" target="blank"><button class="button is-fullwidth is-dark" id="button">Ver curso</button></a>
+                            </div> 
                         </div>
                     </div>
-                </div>
+                    <a href="${listaCursosGames[i].urlCurso}" target="blank">
+                        <button class="button is-fullwidth is-dark" id="button">Ver mais</button>
+                    </a>
+                </div> 
             `;
         cursosGames.innerHTML += templateGames;
     }
@@ -136,7 +144,7 @@ async function mostrarCursos(res) {
 async function requestApi() {
     let response = await fetch(url);
     response = await response.json();
-    
+
     return response;
 }
 

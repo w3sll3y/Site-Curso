@@ -10,6 +10,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
     <link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 
 <body>
@@ -70,7 +71,7 @@
     </nav>
 
     <!-- BARRA DE PESQUISA -->
-    <section class="section is-primary">
+    <div class="container pesquisa">
         <div class="field is-grouped">
             <p class="control is-expanded">
                 <input class="input" type="text" placeholder="O que você procura?">
@@ -81,9 +82,11 @@
                 </a>
             </p>
         </div>
-    </section>
+    </div>
     
-    <h3 id="loader">Aguarde. Carregando cursos...</h3>    
+    <div class="container" id="loader">
+        <h3>Aguarde. Carregando cursos...</h3>    
+    </div>
 
     <section class="section">
 
